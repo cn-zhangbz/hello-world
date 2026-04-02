@@ -1,0 +1,41 @@
+{
+  "runId": "demo-login-20260402-001",
+  "target": {
+    "link": "https://www.figma.com/design/A5PKMrqppMO4gmLAOBbj1S/Untitled?node-id=0-1&p=f&t=qnmV8cbtByLRZOFj-0",
+    "fileKey": "A5PKMrqppMO4gmLAOBbj1S",
+    "entryNodeId": "0-1"
+  },
+  "prototypeGoal": "登录页端到端闭环演示：点击“登录”后 NAVIGATE 到“登录成功(Login Success)”Frame",
+  "writeBackActions": [
+    {
+      "type": "find_or_create_frame",
+      "frameName": "Login Success",
+      "constraints": {
+        "createIfMissing": true
+      }
+    },
+    {
+      "type": "set_prototype_reaction",
+      "from": {
+        "nodeNameHint": "登录按钮",
+        "nodeTypeHint": "button"
+      },
+      "reaction": {
+        "event": "ON_CLICK",
+        "action": "NAVIGATE",
+        "targetFrameName": "Login Success"
+      }
+    }
+  ],
+  "mappingEvidence": {
+    "specFields": [
+      "ui-layout.json.actions.loginOperationId",
+      "ui-layout.json.actions.captchaOperationId",
+      "mapping.figmaNodeNames[]",
+      "mapping.reactComponentNames[]"
+    ],
+    "notes": [
+      "当前本地环境的 Framelink_Figma_MCP 只暴露读取/下载接口，无法直接执行写回操作；因此此文件用于给 Cursor/人来落地写回时提供固定执行计划与可核对点。"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "pageType": "login",
+  "pageName": "LoginPage",
+  "state": [],
+  "dataSources": [],
+  "sections": [],
+  "actions": {
+    "loginOperationId": "login",
+    "captchaOperationId": "refreshCaptcha",
+    "loginRequestFields": {
+      "username": "username",
+      "password": "password",
+      "captcha": "captcha"
+    },
+    "loginResponseTokenExtract": "token"
+  },
+  "mapping": {
+    "figmaNodeNames": [],
+    "reactComponentNames": []
+  }
+}
