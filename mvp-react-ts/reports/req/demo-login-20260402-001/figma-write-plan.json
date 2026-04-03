@@ -1,0 +1,44 @@
+{
+  "runId": "demo-login-gateway-20260403",
+  "target": {
+    "link": "https://www.figma.com/design/A5PKMrqppMO4gmLAOBbj1S/Untitled?node-id=0-1&p=f&t=qnmV8cbtByLRZOFj-0",
+    "fileKey": "A5PKMrqppMO4gmLAOBbj1S",
+    "entryNodeId": "0-1"
+  },
+  "prototypeGoal": "数据服务隔离交换网关登录页：卡片+品牌标题+用户名/密码/验证码+登录；点击登录 NAVIGATE 到「登录成功」Frame",
+  "framesToCreateOrUpdate": [
+    {
+      "name": "Login Page",
+      "children": [
+        { "name": "Logo", "role": "header_icon_and_title", "titleText": "数据服务隔离交换网关" },
+        { "name": "UsernameInput", "placeholder": "请输入用户名" },
+        { "name": "PasswordInput", "placeholder": "请输入密码" },
+        { "name": "CaptchaRow", "children": ["CaptchaInput", "CaptchaImage", "CaptchaRefreshButton"] },
+        { "name": "LoginButton", "label": "登录" }
+      ]
+    },
+    {
+      "name": "Login Success",
+      "role": "prototype_destination"
+    }
+  ],
+  "prototypeReactions": [
+    {
+      "from": { "nodeName": "LoginButton", "event": "ON_CLICK" },
+      "to": { "frameName": "Login Success", "action": "NAVIGATE" }
+    },
+    {
+      "from": { "nodeName": "CaptchaRefreshButton", "event": "ON_CLICK" },
+      "note": "演示可选：触发刷新验证码（与 refreshCaptcha API 叙事一致）"
+    },
+    {
+      "from": { "nodeName": "CaptchaImage", "event": "ON_CLICK" },
+      "note": "与前端一致：点击图片区域也可刷新验证码"
+    }
+  ],
+  "mcpLimitation": "当前 Cursor 侧 Framelink_Figma_MCP 描述文件仅含 get_figma_data / download_figma_images；API 调用可能 429。实际写回需在 Figma 内手工对照本计划，或换用支持写回的 Figma 插件/REST 写权限工具。",
+  "mappingAlignment": {
+    "figmaNodeNames": "见 ui-layout.json mapping.figmaNodeNames",
+    "reactDataTestIds": ["LoginCard", "Logo", "UsernameInput", "PasswordInput", "CaptchaRow", "CaptchaInput", "CaptchaImage", "CaptchaRefreshButton", "LoginButton"]
+  }
+}
