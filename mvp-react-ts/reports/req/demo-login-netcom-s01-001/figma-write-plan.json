@@ -1,0 +1,33 @@
+{
+  "runId": "demo-login-netcom-s01-001",
+  "target": {
+    "link": "https://www.figma.com/design/gcVOdCfrrMtwXpsnaFGFOc/Untitled?node-id=0-1",
+    "fileKey": "gcVOdCfrrMtwXpsnaFGFOc",
+    "entryNodeId": "0-1"
+  },
+  "prototypeGoal": "网通S01 网关风格登录：顶栏品牌标题 + 卡片表单；点击登录 NAVIGATE 到 Login Success",
+  "framesToCreateOrUpdate": [
+    {
+      "name": "Login Page",
+      "children": [
+        { "name": "BrandHeader", "titleText": "网通S01-数据服务隔离交换网关" },
+        { "name": "Logo", "role": "icon_and_subtitle", "subtitleText": "用户登录" },
+        { "name": "UsernameInput", "placeholder": "请输入用户名" },
+        { "name": "PasswordInput", "placeholder": "请输入密码" },
+        { "name": "CaptchaRow", "children": ["CaptchaInput", "CaptchaImage", "CaptchaRefreshButton"] },
+        { "name": "LoginButton", "label": "登录" }
+      ]
+    },
+    { "name": "Login Success", "role": "prototype_destination" }
+  ],
+  "prototypeReactions": [
+    {
+      "from": { "nodeName": "LoginButton", "event": "ON_CLICK" },
+      "to": { "frameName": "Login Success", "action": "NAVIGATE" }
+    }
+  ],
+  "mappingAlignment": {
+    "figmaNodeNames": "见同目录 ui-layout.json mapping.figmaNodeNames",
+    "reactDataTestIds": ["LoginCard", "Logo", "UsernameInput", "PasswordInput", "CaptchaRow", "CaptchaInput", "CaptchaImage", "CaptchaRefreshButton", "LoginButton"]
+  }
+}
