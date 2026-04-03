@@ -1,0 +1,51 @@
+{
+  "pageType": "login",
+  "pageName": "LoginPage",
+  "state": [],
+  "dataSources": [],
+  "sections": [],
+  "loginTheme": {
+    "title": "网通S01-数据服务隔离交换网关",
+    "logoSubtitle": "用户登录",
+    "brandHeaderBar": true,
+    "primaryColor": "#1565C0",
+    "pageBackground": "#ECEFF1",
+    "cardBackground": "#FFFFFF",
+    "borderColor": "#CFD8DC",
+    "captchaPlaceholderImage": "/login-captcha-netcom-s01.png"
+  },
+  "actions": {
+    "loginOperationId": "login",
+    "captchaOperationId": "refreshCaptcha",
+    "loginRequestFields": {
+      "username": "username",
+      "password": "password",
+      "captcha": "captcha"
+    },
+    "loginResponseTokenExtract": "token"
+  },
+  "mapping": {
+    "figmaNodeNames": [
+      "Login Page / BrandHeader",
+      "Login Page / Logo",
+      "Login Page / UsernameInput",
+      "Login Page / PasswordInput",
+      "Login Page / CaptchaInput",
+      "Login Page / CaptchaImage",
+      "Login Page / CaptchaRefreshButton",
+      "Login Page / LoginButton",
+      "Login Success"
+    ],
+    "reactComponentNames": [
+      "LoginPage",
+      "BrandHeader",
+      "Logo",
+      "UsernameInput",
+      "PasswordInput",
+      "CaptchaInput",
+      "CaptchaImage",
+      "CaptchaRefreshButton",
+      "LoginButton"
+    ]
+  }
+}
