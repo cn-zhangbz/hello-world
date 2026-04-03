@@ -1,0 +1,47 @@
+{
+  "pageType": "login",
+  "pageName": "LoginPage",
+  "state": [],
+  "dataSources": [],
+  "sections": [],
+  "loginTheme": {
+    "title": "数据服务隔离交换网关",
+    "primaryColor": "#1861B5",
+    "pageBackground": "#F0F4F8",
+    "cardBackground": "#FFFFFF",
+    "borderColor": "#E0E0E0",
+    "captchaPlaceholderImage": "/login-captcha-demo.png"
+  },
+  "actions": {
+    "loginOperationId": "login",
+    "captchaOperationId": "refreshCaptcha",
+    "loginRequestFields": {
+      "username": "username",
+      "password": "password",
+      "captcha": "captcha"
+    },
+    "loginResponseTokenExtract": "token"
+  },
+  "mapping": {
+    "figmaNodeNames": [
+      "Login Page / Logo",
+      "Login Page / UsernameInput",
+      "Login Page / PasswordInput",
+      "Login Page / CaptchaInput",
+      "Login Page / CaptchaImage",
+      "Login Page / CaptchaRefreshButton",
+      "Login Page / LoginButton",
+      "Login Success"
+    ],
+    "reactComponentNames": [
+      "LoginPage",
+      "Logo",
+      "UsernameInput",
+      "PasswordInput",
+      "CaptchaInput",
+      "CaptchaImage",
+      "CaptchaRefreshButton",
+      "LoginButton"
+    ]
+  }
+}
