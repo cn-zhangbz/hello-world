@@ -1,0 +1,78 @@
+{
+  "title": "Auth APIs",
+  "version": "1.0.0",
+  "description": "登录与验证码接口（网通S01 网关登录演示）",
+  "mapping": {
+    "figmaNodeNames": [
+      "Login Page / BrandHeader",
+      "Login Page / Logo",
+      "Login Page / UsernameInput",
+      "Login Page / PasswordInput",
+      "Login Page / CaptchaInput",
+      "Login Page / CaptchaImage",
+      "Login Page / CaptchaRefreshButton",
+      "Login Page / LoginButton",
+      "Login Success"
+    ],
+    "reactComponentNames": [
+      "LoginPage",
+      "BrandHeader",
+      "Logo",
+      "UsernameInput",
+      "PasswordInput",
+      "CaptchaInput",
+      "CaptchaImage",
+      "CaptchaRefreshButton",
+      "LoginButton"
+    ]
+  },
+  "basePath": "/api/v1",
+  "resources": [
+    {
+      "name": "auth-login",
+      "path": "/auth/login",
+      "operations": [
+        {
+          "method": "post",
+          "operationId": "login",
+          "summary": "登录",
+          "requestBody": {
+            "type": "object",
+            "required": ["username", "password", "captcha"],
+            "properties": {
+              "username": { "type": "string" },
+              "password": { "type": "string" },
+              "captcha": { "type": "string" }
+            }
+          },
+          "response": {
+            "type": "object",
+            "required": ["token"],
+            "properties": {
+              "token": { "type": "string" }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "auth-captcha",
+      "path": "/auth/captcha",
+      "operations": [
+        {
+          "method": "get",
+          "operationId": "refreshCaptcha",
+          "summary": "刷新验证码",
+          "response": {
+            "type": "object",
+            "required": ["imageDataUrl"],
+            "properties": {
+              "imageDataUrl": { "type": "string" }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "schemas": {}
+}
