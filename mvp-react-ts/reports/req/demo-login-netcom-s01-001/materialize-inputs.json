@@ -1,0 +1,32 @@
+{
+  "uiSpecPath": "/home/zbz/Documents/AutoCursor/mvp-react-ts/reports/req/demo-login-netcom-s01-001/ui-layout.json",
+  "apiSpecPath": "/home/zbz/Documents/AutoCursor/mvp-react-ts/reports/req/demo-login-netcom-s01-001/api-requirement.json",
+  "normalizedUiSpecPath": "/home/zbz/Documents/AutoCursor/mvp-react-ts/reports/req/demo-login-netcom-s01-001/ui-spec-normalized.json",
+  "reactPageName": "LoginPage",
+  "sectionComponentNames": [],
+  "mappingReactComponentNames": [
+    "LoginPage",
+    "Logo",
+    "UsernameInput",
+    "PasswordInput",
+    "CaptchaInput",
+    "CaptchaImage",
+    "CaptchaRefreshButton",
+    "LoginButton"
+  ],
+  "mappingFigmaNodeNames": [
+    "Login Page / BrandHeader",
+    "Login Page / Logo",
+    "Login Page / UsernameInput",
+    "Login Page / PasswordInput",
+    "Login Page / CaptchaInput",
+    "Login Page / CaptchaImage",
+    "Login Page / CaptchaRefreshButton",
+    "Login Page / LoginButton",
+    "Login Success"
+  ],
+  "openapiOut": "/home/zbz/Documents/AutoCursor/mvp-react-ts/reports/openapi.generated.json",
+  "apiOutDir": "/home/zbz/Documents/AutoCursor/mvp-react-ts/src/api/generated",
+  "apiTestsOutDir": "/home/zbz/Documents/AutoCursor/mvp-react-ts/tests/api/generated",
+  "pagesOutDir": "/home/zbz/Documents/AutoCursor/mvp-react-ts/src/pages/generated"
+}
